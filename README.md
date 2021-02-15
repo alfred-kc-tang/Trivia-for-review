@@ -90,13 +90,13 @@ The API will return four error types when requests fail:
 
 ## Endpoints
 
-* [GET /categrories](#get-/categories)
-* [GET /questions](#get-/questions)
-* [DELETE /questions/question_id](#delete-/questions/<question_id>)
-* [POST /questions](#post-/questions)
-* [POST /search](#post-/search)
-* [GET /categories/<category_id>/questions](#get-/categories/<category_id>/questions)
-* [POST /play](#post-/play)
+* [GET /categrories](#get-categories)
+* [GET /questions](#get-questions)
+* [DELETE /questions/<question_id>](#delete-questionsquestion_id)
+* [POST /questions](#post-questions)
+* [POST /search](#post-search)
+* [GET /categories/<category_id>/questions](#get-categoriescategory_idquestions)
+* [POST /play](#post-play)
 
 ### GET /categories
 
@@ -213,7 +213,7 @@ The API will return four error types when requests fail:
 }
 ```
 
-## DELETE /questions/question_id
+## DELETE /questions/<question_id>
 - Deletes a question
 - Request Arguments: question id
 - Sample Request: `curl DELETE http://127.0.0.1/questions/<question_id>`
